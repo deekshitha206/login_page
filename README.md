@@ -23,15 +23,6 @@ The site is designed to display a restaurant's services, menu, payment options, 
 - **Font Awesome** for icons
 - **Google Fonts** for typography
 
-## 📂 Project Structure
-.
-├── responsive.html # Main HTML file
-├── responsive.css # Custom CSS styles
-└── README.md # Project documentation
-
-
----
-
 ## 🚀 Getting Started
 
 1. **Clone the Repository**
