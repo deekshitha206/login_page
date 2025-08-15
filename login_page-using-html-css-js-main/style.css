@@ -1,0 +1,229 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("https://cdn.pixabay.com/photo/2015/04/19/08/32/rose-729509_640.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+.container{
+    position: relative;
+}
+header{
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: rgba(17, 17, 18, 0.516);
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 1;
+}
+.logo{
+    font-size: 26px;
+    color:#fff;
+    font-weight: bold;   
+}
+.navigation a::after{
+    background-color: #fff;
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .5s;
+
+}
+.paragraph{
+    color: rgb(19, 17, 13);
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 2px;
+    border: 2px solid rgb(1, 5, 11);
+    width: 600px;
+    height: 120px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 45px;
+    backdrop-filter: blur(10px);
+}
+.navigation a:hover::after{
+    transform: scaleX(1);
+}
+.navigation a{
+    font-size: 16px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigation .button{
+    background: rgb(250, 238, 238);
+    border: 0px solid #0b0a0a;
+    outline: none;
+    border-radius: 6px;
+    cursor:pointer;
+    font-size: 14px;
+    color: #0c0c0c;
+    margin-left: 40px;
+    transition: .5s;
+    font-size: 16px;
+    font-weight: 600;
+}
+.button {
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+
+  
+.button:hover{
+    width: 120px;
+}
+
+.navigation .btnLogin-popup:hover{
+    background:#fff;
+    color:rgba(33, 21, 201, 0.893);
+    font-weight: bold;
+    border: 2px solid #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.733);
+}
+.wrapper{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: transparent;
+    border: 1px solid rgba(39, 117, 166, 0.299);
+    box-shadow: 0 0 10px black ;
+    border-radius: 8px;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    
+    
+}
+.wrapper .form-box{
+    width: 90%;
+    padding: 25px;
+}
+
+
+.form-box h2{
+    font-size: 25px;
+    color:  #010f19;
+    text-align: center;
+    padding-top: 15px;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #010c15;
+    font-weight: 500;
+    pointer-events:none;
+    transition: .5s;
+}
+.input-box input{
+    outline: none;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    color: #010a11;
+    font-weight: bold;
+    padding: 0 35px 0 5px;
+    
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: 5px;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    line-height: 57px;
+}
+.remember-forget label{
+    color: #371b03;
+    font-weight: 500;
+    
+}
+.remember-forget input{
+    accent-color: #031e32;
+}
+.remember-forget a{
+    color: #040221;
+    padding-left: 10px;
+    
+}
+.btn{
+    color: rgb(136, 156, 26);
+    background-color: #031e32;
+    height: 35px;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    margin: 15px 0px 15px 0px;
+    border-radius: 5px;
+    text-align: center;
+}
+.input-box .register{
+    color: #371b03;
+}
+.register a{
+    color: #040221;
+    padding-left: 10px;
+}
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    font-size: 40px;
+    height: 20px;
+}
+.wrapper .form-box.register{
+    position: absolute;
+    transform: translateX(400px);
+    transition: transform 0.5s ease;
+}
